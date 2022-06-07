@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img id="imagen-logo" src="./assets/logo.png" alt="Logo de alura" />
+      <h1 class="titulo-principal">Encriptador de texto</h1>
+    </header>
+    <main>
+      <section class="entrada-texto">
+        <span id="error-de-entrada" class="invisible"
+          >Escribiste un caractér inválido</span
+        >
+        <textarea
+          id="texto-de-entrada"
+          placeholder="Ingrese texto a encriptar/desencriptar"
+          autofocus
+        ></textarea>
+        <p class="advertencia">Solo textos sin acentos y en minuscula</p>
+        <div class="espacio-de-botones">
+          <button id="boton-encriptar">Encriptar</button>
+          <button id="boton-desencriptar">Desencriptar</button>
+        </div>
+      </section>
+
+      <section class="salida-texto">
+        <div id="buscador-de-texto">
+          <img src="./assets/muñeco.png" alt="Buscador de texto" />
+          <h2>Ningun mensaje fue encontrado</h2>
+          <p>Esperando mensaje secreto</p>
+        </div>
+        <textarea id="texto-de-salida" class="invisible" readonly></textarea>
+        <div class="espacio-de-botones">
+          <button id="boton-copiar" class="invisible">Copiar</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="contacto">
+        <p>Desarrollado por Germán Cleiman</p>
+        <ul>
+          <li>
+            <img src="./assets/linkedin.png" alt="Linkedin" /><a
+              href="https://www.linkedin.com/in/german-cleiman/"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <img src="./assets/github.png" alt="GitHub" /><a
+              href="https://github.com/GermanCleiman"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/encriptar.js"></script>
+    <script src="js/valida-texto.js"></script>
+    <script src="js/desencriptar.js"></script>
+    <script src="js/copiar.js"></script>
+  </body>
+</html>
